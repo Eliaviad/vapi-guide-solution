@@ -1,0 +1,12 @@
+Steps:
+1) Send the post request to create a user. Note there are three parameters in the response. 
+  • name 
+  • username 
+  • id 
+2) Send a GET request, add the Authorization-Token harder, and set the value to username:password encode in base 64; note that this time the server returns four parameters
+  • id 
+  •name
+  • username 
+  • credit
+3) Add the credit parameter to the POST request and set the value to a positive value. 
+4) Send the GET request and observe that the credit is set to the value you provided and the flag: flag{api6_afb969db8b6e272694b4}
