@@ -1,0 +1,8 @@
+Steps:
+1) Send the mobile login request, and the server sends a 4-digit OTP. 
+2) Try to send the verification request and see that the server sends an invalid OTP. 
+3) Send the request to the intruder, and set the payload to be from 1000 to 9999. This will cover all 4-digit OTP. 
+4) Filter the result status to find the one with 200.
+5) Send the request with the correct OTP, and observe you get the token. 
+6) Add the token from the request to the GET request. Don’t forget to add the Authorization-Token header.
+7) The server responds back with the flag: flag{api4_ce696239323ea5b2d015}
