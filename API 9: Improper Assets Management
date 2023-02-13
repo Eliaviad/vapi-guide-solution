@@ -1,0 +1,8 @@
+Steps:
+1) Send the login request. Note that the server returns two countdown headers 
+  • X-RateLimit-Limit: 5
+  • X-RateLimit-Remaining: 4
+2) Each time we send a false request, the countime header goes down until zero. 
+3) Note that the API is version 2; change it to v1 and observe that this time the headers are gone. 
+4) Send the request to the intruder, and add the pin, set the payload to numbers from 1000 to 9999
+5) Filter the results by the length, find the one with the high value, and find the successful login with the flag: flag{api9_81e306bdd20a7734e244}
