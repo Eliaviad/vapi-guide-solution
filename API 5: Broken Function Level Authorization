@@ -1,0 +1,6 @@
+Steps:
+1) Create a user using the POST request. 
+2) Add the token from the request to the GET request. Don’t forget to add the Authorization-Token header.
+3) Note that you get an error. 
+4) Since we got a hint that the admin logs to a different place, we can perform fuzzing on the user parameter. 
+5) Send the GET request this time to /vapi/api5/users and the flag will be in the first user. flag{api5_76dd990a97ff1563ae76}
