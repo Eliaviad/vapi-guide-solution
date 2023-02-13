@@ -1,0 +1,6 @@
+Steps:
+1) Create a user, note that the user’s ID is a number.
+http://127.0.0.1/vapi/api1/user 
+2) Send the GET request, adds the Authorization-Token harder, and sets the value to username:password encoded in base 64.
+3) Change the ID user in the URL to 1, you will recive Michael Scott information with the flag: flag{api1_d0cd9be2324cc237235b}
+http://127.0.0.1/vapi/api1/user/1 
