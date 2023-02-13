@@ -1,0 +1,5 @@
+Steps:
+1) Send the POST request, add a ‘ string, and observe that the server returns an SQL error. 
+2) In the username parameter add the following SQL syntax ‘or 1=1#
+3) Add the Authorization-Token header with the authkey value to the GET headers, 
+   in the response, you will find the flag: flag{api8_509f8e201807860d5c91}
